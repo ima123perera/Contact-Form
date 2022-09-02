@@ -21,7 +21,7 @@
 				. mysqli_connect_error());
 		}
 		
-		// Taking all 5 values from the form data(input)
+		// Taking all 4 values from the form data(input)
 		$fname = $_REQUEST['fname'];
 		$email = $_REQUEST['email'];
 		$issue = $_REQUEST['issue'];
@@ -29,7 +29,7 @@
 		
 		
 		// Performing insert query execution
-		// here our table name is college
+		// here our table name is form
 		$sql = "INSERT INTO form VALUES ('$fname',
 			'$email','$issue','$comment')";
 		
